@@ -4,7 +4,7 @@
 Binary Image Classification  
 
 **Problem Statement**  
-To classify the images of apples and bananas using Convolutional Neural Network.  
+To build a binary image classifier which can classify the images of apples and bananas using Convolutional Neural Network.  
 
 **Description**  
 - Data: Around 1000 images of apples and bananas for training and around 300 for testing.  
