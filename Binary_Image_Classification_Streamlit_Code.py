@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 30 12:09:35 2020
-
-@author: lenovo IP330s
-"""
-
 import cv2 
 import os 
 import numpy as np 
@@ -28,8 +21,8 @@ st.sidebar.info(
   
 '''Setting up the envirnoment'''
   
-TRAIN_DIR = 'C:\\Users\\lenovo IP330s\\Desktop\\Python_Project\\Multivariate Statistics Projects\\Final Python\\appu\\appu_train'
-TEST_DIR = 'C:\\Users\\lenovo IP330s\\Desktop\\Python_Project\\Multivariate Statistics Projects\\Final Python\\appu\\appu_test'
+TRAIN_DIR = 'fruit_train'
+TEST_DIR = 'fruit_test'
 IMG_SIZE = 50
 LR = 1e-3
   
@@ -182,7 +175,7 @@ def predict_test_data(image):
 
 
 uploaded_file = st.file_uploader("Choose an image...", type="jpg")
-ph="C:\\Users\\lenovo IP330s\\Desktop\\Python_Project\\bana1.jpg"
+ph="banana.jpg"
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
@@ -198,30 +191,3 @@ if uploaded_file is not None:
     if np.argmax(model_out) == 0: str_label ='Apple'
     else: str_label ='Banana'
     st.subheader('%s ' % (str_label))
-          
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
